@@ -1,0 +1,25 @@
+{
+    "name": "express-server-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "nodemon --ignore './mochawesome-report' --exec 'mocha -t 100000 --reporter mochawesome -r esm || true'",
+        "start": "nodemon -r esm server.js",
+        "dev": "nodemon --inspect=8102 -r esm server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "esm": "^3.2.25",
+        "express": "^4.17.1",
+        "lodash": "^4.17.15"
+    },
+    "devDependencies": {
+        "mocha": "^6.2.2",
+        "mochawesome": "^4.1.0",
+        "nodemon": "^2.0.2"
+    }
+}
